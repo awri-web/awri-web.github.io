@@ -92,9 +92,16 @@
 
     .notes-video {
       width: 100%;
-      display: block;
       margin-top: 48px;
       margin-bottom: 16px;
+      aspect-ratio: 4/3;
+    }
+
+    .notes-video iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: none;
     }
 
     .teaser {
@@ -194,9 +201,9 @@
 
     <p class="teaser"><a href="https://vimeo.com/manage/videos/1174625159/99cbf53c02">Teaser</a></p>
 
-    <video class="notes-video" autoplay loop muted playsinline>
-      <source src="notes.mp4" type="video/mp4">
-    </video>
+    <div class="notes-video">
+      <iframe src="https://player.vimeo.com/video/1216893004?h=684933938f&background=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
   </div>
 </body>
