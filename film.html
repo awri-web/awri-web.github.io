@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <title>Leland Nally — Film</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Garamond, 'EB Garamond', 'Times New Roman', serif;
+      color: #000;
+      background: #fff;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .container {
+      display: inline-block;
+      width: 420px;
+      max-width: calc(100vw - 48px);
+      text-align: left;
+      padding: 48px 0 100px;
+    }
+
+    nav {
+      font-family: 'Cormorant', serif;
+      font-size: 1rem;
+      margin-bottom: 32px;
+      color: #888;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    h2 {
+      font-family: 'Cormorant', serif;
+      font-weight: normal;
+      font-size: 0.95rem;
+      margin-top: 40px;
+      margin-bottom: 8px;
+    }
+
+    .laurels {
+      font-size: 0.8rem;
+      color: #555;
+      margin-bottom: 36px;
+      line-height: 1.8;
+    }
+
+    .jury {
+      margin-bottom: 36px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .jury-award {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .jury-quote {
+      font-style: italic;
+      color: #444;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .jury-winner {
+      font-size: 0.85rem;
+      color: #111;
+    }
+
+    .notes-video {
+      width: 100%;
+      display: block;
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+
+    .teaser {
+      margin-top: 16px;
+      font-size: 15px;
+      font-family: Garamond, 'EB Garamond', 'Times New Roman', serif;
+      color: #000;
+    }
+
+    .teaser a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .teaser a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .synopsis {
+      margin-top: 40px;
+      color: #444;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .film-images img {
+      width: 100%;
+      display: block;
+      margin-bottom: 8px;
+    }
+  @media (max-width: 480px) {
+      .container {
+        padding: 32px 0 60px;
+      }
+      nav {
+        font-size: 1.1rem;
+      }
+      .jury-award {
+        font-size: 0.85rem;
+      }
+      .laurels {
+        font-size: 0.9rem;
+      }
+      .synopsis {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <nav>
+      <a href="index.html">home</a> / <a href="info.html">info</a> / <a href="film.html">film</a>
+    </nav>
+
+    <div class="film-images">
+      <img src="film1.png" alt="">
+      <img src="film2.png" alt="">
+      <img src="film3.png" alt="">
+      <img src="film4.png" alt="">
+      <img src="film5.png" alt="">
+      <img src="film6.png" alt="">
+    </div>
+
+    <p class="synopsis">A roving portrait of the phantasmagoric landscape of the rural imagination, <em>Dwarf Neon Mayfield</em> travels the Kentucky countryside following a twin set of storms of historic intensity. In the deepest rural interior, humans and animals alike traverse the new contours of their world while left behind to live amongst the wreckage. A panorama of ecological collapse emerges from America's most impoverished region, elemental images of the living and the dying reveal a psychopheric terrain in upheaval; What of the old world remains?</p>
+
+    <h2>Screenings:</h2>
+
+    <p class="laurels">WINNER Atlanta Film Festival 2026<br>Mimesis Documentary Festival 2026<br>Seattle TBA<br>New York City TBA<br>More TBA</p>
+
+    <div class="jury">
+      <p class="jury-award"><a href="https://www.atlantafilmfestival.com/atlff-news/2026/6/15/50th-atlanta-film-festival-announces-2026-jury-and-screenplay-winners">BEST CINEMATOGRAPHY presented by Panavision<br>50TH ATLFF</a></p>
+      <p class="jury-quote">"The word 'bravery' came quickly to mind as we discussed our winning film. To landscapes and lives that have been shocked and disrupted by the force of nature, it brings an eye filled with patience and gentleness. From this delicacy, this camera surfaces images of great tenderness; the care in its handling inspires vulnerability and truth-telling in what it documents."</p>
+      <p class="jury-winner">Winner — <em>Dwarf Neon Mayfield</em></p>
+    </div>
+
+    <p class="teaser"><a href="https://vimeo.com/manage/videos/1174625159/99cbf53c02">Teaser</a></p>
+
+    <video class="notes-video" autoplay loop muted playsinline>
+      <source src="notes.mp4" type="video/mp4">
+    </video>
+
+  </div>
+</body>
+</html>
