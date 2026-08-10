@@ -90,13 +90,27 @@
       color: #111;
     }
 
-    .notes-video {
-      display: block;
+    .video-wrapper {
+      position: relative;
       width: 100%;
       aspect-ratio: 9/16;
       margin-top: 48px;
       margin-bottom: 16px;
+    }
+
+    .notes-video {
+      display: block;
+      width: 100%;
+      height: 100%;
       border: none;
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
     .teaser {
@@ -196,7 +210,10 @@
 
     <p class="teaser"><a href="https://vimeo.com/manage/videos/1174625159/99cbf53c02">Teaser</a></p>
 
-    <iframe class="notes-video" src="https://player.vimeo.com/video/1216893004?h=684933938f&autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <div class="video-wrapper">
+      <iframe class="notes-video" src="https://player.vimeo.com/video/1216893004?h=684933938f&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="video-overlay"></div>
+    </div>
 
   </div>
 </body>
